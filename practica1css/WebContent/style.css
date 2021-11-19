@@ -1,0 +1,42 @@
+@charset "UTF-8";
+body {
+  background-color: lightblue;
+}
+h1 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+p::first-line {
+  color: red;
+}
+span:hover {
+	 background-color: yellow;
+	 color: red;
+}
+h1::first-letter {
+	font-size: 80px;
+}
+a:visited {
+	background-color: blue;
+
+}
+a:link {
+	background-color: white;
+
+}
+.derecha{
+	float:right;
+}
+h2{
+	counter-reset: cuenta-ciclos;
+}
+li.lista::before{
+	content: counter(cuenta-ciclos) ". ";
+	counter-increment: cuenta-ciclos;
+}
+
+ul {
+	list-style-type: none;
+}
